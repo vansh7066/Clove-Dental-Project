@@ -1345,16 +1345,21 @@ body {
   margin: 0 auto;
   height: 100px;
   position: relative;
+  padding: 10px 0;
 }
 
 .banner-track {
   display: inline-block;
   animation: scrollBanner 30s linear infinite;
+  min-width: 200%;
 }
 
 .banner-track img {
   margin-right: 10px;
   vertical-align: middle;
+  height: 50px;
+  width: auto;
+  margin-top: -8px;
 }
 
 @keyframes scrollBanner {
@@ -1586,10 +1591,8 @@ body {
 }
 
 .images img {
-  max-width: 100%;
+  width: 300px;
   height: auto;
-  flex-basis: calc(50% - 20px);
-  min-width: 250px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
